@@ -1,21 +1,17 @@
-clasificador-mensajes/
-│
-├── backend/
-│   ├── main.py           # Punto de entrada de FastAPI
-│
-├── frontend/
-│   └── app.py            # Interfaz gráfica con Streamlit
-│
-├── utils/
-│   ├── logger.py         # Configuración de eventos (INFO, DEBUG, ERROR).
-│   └── errors.py         # Manejo centralizado de errores
-│
-├── config.py             # Constantes globales (modelos, etiquetas, modelo, umbral de confianza.)
-├── chains.py             # Cadenas personalizadas de LangChain para reutilización
-├── models.py             # Modelos Pydantic para validación de datos
-├── classifier.py         # Clasificador con Zero-Shot + LangChain
-├── requirements.txt      # Dependencias del entorno
-└── README.md             # Documentación del proyecto
+## 📁 Estructura del Proyecto
+
+| Carpeta / Archivo | Propósito |
+|------------------|-----------|
+| `backend/main.py` | Servidor REST con FastAPI |
+| `frontend/app.py` | Interfaz web interactiva con Streamlit |
+| `utils/logger.py` | Sistema de logs profesionales |
+| `utils/errors.py` | Errores personalizados y manejo coherente |
+| `config.py` | Configuraciones globales: etiquetas, modelo y umbral |
+| `chains.py` | Cadena personalizada de LangChain |
+| `models.py` | Validación de datos con Pydantic |
+| `classifier.py` | Clasificación IA con Zero-Shot Classification |
+| `requirements.txt` | Lista de dependencias del entorno |
+| `README.md` | Documentación principal del proyecto |
 
 # Clasificación Automatizada de Mensajes con IA
 
@@ -56,3 +52,12 @@ Este proyecto fue desarrollado siguiendo buenas prácticas de arquitectura modul
    ```bash
    python -m venv venv
    venv\Scripts\activate
+2. **Ejecuta el comando para instalar dependencias:**
+   ```bash
+   pip install -r requirements.txt
+3. **Ejecuta el servidor FastAPI:**
+   ```bash
+   python -m uvicorn backend.main:app --reload
+4. **Ejecuta la aplicación de Streamlit:**
+   ```bash
+   streamlit run frontend/app.py
