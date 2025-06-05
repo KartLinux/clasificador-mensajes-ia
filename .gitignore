@@ -1,0 +1,57 @@
+# -----------------------------
+# Entornos virtuales
+# ----------------------------
+mientorno/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyc
+*.db
+*.sqlite3
+
+# -----------------------------
+# Archivos temporales y logs
+# -----------------------------
+logs/
+*.log
+*.log.*
+.env
+.DS_Store
+Thumbs.db
+
+# -----------------------------
+# Modelos de Hugging Face
+# -----------------------------
+.cache/
+.huggingface/
+models/
+transformers_cache/
+data/
+output/
+
+# -----------------------------
+# Streamlit / FastAPI
+# -----------------------------
+streamlit_popen_*
+frontend/__pycache__/
+backend/__pycache__/
+utils/__pycache__/
+
+# -----------------------------
+# Archivos de sistema
+# -----------------------------
+.idea/
+.vscode/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+*.iml
+*.lock-wscript
+*.wafpickle-*
+build/
+dist/
+*.egg-info/
+pip-wheel-metadata/
+share/

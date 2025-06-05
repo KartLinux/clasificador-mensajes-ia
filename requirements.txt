@@ -1,0 +1,10 @@
+fastapi>=0.68.0
+uvicorn>=0.15.0
+transformers>=4.20.0
+torch>=1.13.0
+streamlit>=1.20.0
+loguru>=0.6.0
+pydantic>=1.9.0
+langchain>=0.0.300 
+
+#pip install langchain

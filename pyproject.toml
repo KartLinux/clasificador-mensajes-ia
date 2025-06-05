@@ -1,0 +1,24 @@
+[project]
+name = "clasificador-mensajes"
+version = "0.1.0"
+description = "Sistema de clasificación de mensajes con Zero-Shot y LangChain"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+
+# Dependencias del proyecto
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "transformers",
+    "torch",
+    "streamlit",
+    "loguru",
+    "pydantic",
+    "langchain"
+]
+
+# Estructura del paquete
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["*", "backend.*", "frontend.*", "utils.*"]
